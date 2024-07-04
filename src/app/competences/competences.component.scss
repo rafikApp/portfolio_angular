@@ -1,0 +1,85 @@
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 5rem 2rem;
+}
+
+
+img {
+    width: 100%;
+    display: flex;
+}
+
+a {
+    text-decoration: none;
+}
+
+.custom-icon {
+    width: 2em;
+    height: 2em;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+section .header {
+    margin-bottom: 1rem;
+    color: black;
+    text-align: center;
+    font-size: 2.25rem;
+    font-weight: 600;
+}
+
+.skills {
+    margin-top: 4rem;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+}
+
+.skills .card {
+    background-color: orange;
+    padding: 1rem;
+    border: 2px solid transparent;
+    border-radius: 15px;
+    transition: all 0.4s ease;
+
+}
+
+.skills .card:hover {
+    background-color: wheat;
+    border-color: orange;
+}
+
+
+.skills .card span {
+    display: inline-block;
+    background-color: #1e40af;
+    padding: 2px 9px;
+    margin-bottom: 1rem;
+    font-size: 1.75rem;
+    color: #fff;
+    border-radius: 5px;
+}
+
+.skills .card h4 {
+    margin-bottom: 0.5rem;
+    color: black;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+@media (width < 900px) {
+
+    .skills {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+@media (width < 600px) {
+
+    .skills {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+}
